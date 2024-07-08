@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { BestSelling } from './components/BestSelling';
+import { Boundries } from './components/Boundries';
+// import CheckOut from './components/Checkout';
+import { FlashSale } from './components/FlashSale';
+import { Header } from './components/Header';
+import { LimitedOffer } from './components/LimitedOffer';
+import { Linited } from './components/Linited';
+import { Product } from './components/Product';
+import { Footer } from './Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header/>
+      <LimitedOffer/>
+      <Linited/>
+      <FlashSale/>
+      <Product/>
+      <BestSelling/>
+      <Boundries/>
+      <Footer/>
+      {/* <CheckOut/> */}
     </div>
   );
 }
