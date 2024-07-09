@@ -703,6 +703,7 @@ li {
   position: relative;
 }
 .carti {
+  width: 30%;
   position: absolute;
   height: 250dvh;
   top: 0px;
@@ -710,6 +711,11 @@ li {
   /* width: 30%; */
   background: rgba(255, 243, 230, 1);
   padding: 20px;
+}
+.payer{
+  margin-top: 60px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 @media (max-width: 768px) {
