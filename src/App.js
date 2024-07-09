@@ -19,6 +19,7 @@ function App() {
 
     const openCheckout = () => {
     setIsCheckout(true);
+    setProduct(false);
   };
 
   const closeCheckout = () =>{

@@ -1,7 +1,7 @@
 .checkout {
   display: flex;
-  max-width: 1550px;
-  max-height: 100dvh;
+  /* max-width: 1550px;
+  max-height: 100dvh; */
   align-items: center;
   margin: 0 auto;
 }
@@ -404,6 +404,8 @@ input::placeholder {
   .checkout{
     width: 100%;
     margin-top: 90px;
+    flex-direction: column-reverse;
+
   }
   .containers{
     width: 100%;
@@ -411,5 +413,27 @@ input::placeholder {
   .billing-details{
     width: 100%;
   }
+  .summary {
+    background: #0d5c63;
+    width: 440px;
+    margin: auto;
+    height: 218px;
+    /* padding: 5rem; */
+  }
+  .payment{
+    width: 100%;
+  }
+  .coupon{
+    width: 60%;
+    margin: auto;
+  }
+.options{
+  width: 100%;
+}
+.total,.shipping,.total-amount{
+  width: 60%;
+  margin: auto;
+}
+
 
 }
