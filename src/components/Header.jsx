@@ -4,7 +4,7 @@ export const Header = () => {
   return (
     <header>
       <div class="container">
-        <h2>MYEshop.com</h2>
+       <img src="image/hamburger.svg" alt="" className="hamburger"/> <h2>MYEshop.com</h2>
         <div class="search-bar">
           <select>
             <option value="all">All category</option>
@@ -18,7 +18,8 @@ export const Header = () => {
 
         <div className="basket-icon">
           <img src="image/cart.svg" alt="cart" />
-          <img src="image/heart.svg" alt="" />
+          <img src="image/heart.svg" alt="" className="heart"/>
+          <img src="image/search.svg" alt="" className="second-search" />
         </div>
       </div>
     </header>

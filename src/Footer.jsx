@@ -14,9 +14,7 @@ export const Footer = () => {
                 <p>&rarr;</p>
             </form>
 
-            <div className="social">
-                <img src="image/facebook.svg" alt="" /><img src="image/instagram.svg.svg" alt="" /><img src="image/youtube.svg.svg" alt="" />
-            </div>
+           
         </div>
         <div id="services">
             <ul>
@@ -37,6 +35,9 @@ export const Footer = () => {
             </ul>
         </div>
     </div>
+    <div className="social">
+                <img src="image/facebook.svg" alt="" /><img src="image/instagram.svg.svg" alt="" /><img src="image/youtube.svg.svg" alt="" />
+            </div>
    </footer>
   )
 }
