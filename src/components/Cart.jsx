@@ -1,10 +1,12 @@
 // import React, { useState } from "react";
 
-export const Cart = ({product, onCLick,setproduct}) => {
+export const Cart = ({product, setproduct, onClick}) => {
     
     const handleClose = ()=>{
        setproduct(false)
-    }
+    } 
+
+    
 
     return (
         <>
@@ -67,7 +69,7 @@ export const Cart = ({product, onCLick,setproduct}) => {
                                 <p>Total</p>
                                 <p>$0.00</p>
                             </div>
-                            <button>Place Your Order Now</button>
+                            <button onClick={onClick}>Place Your Order Now</button>
                         </div>
                     </div>
                 </div>

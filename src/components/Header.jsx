@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Header = () => {
+export const Header = ({onClick, cartcount}) => {
   return (
     <header>
       <div class="container">
@@ -17,7 +17,8 @@ export const Header = () => {
         </div>
 
         <div className="basket-icon">
-          <img src="image/cart.svg" alt="cart" />
+          <span className="product-count">{cartcount}</span>
+          <img src="image/cart.svg" alt="cart" onClick={onClick} />
           <img src="image/heart.svg" alt="" className="heart"/>
           <img src="image/search.svg" alt="" className="second-search" />
         </div>

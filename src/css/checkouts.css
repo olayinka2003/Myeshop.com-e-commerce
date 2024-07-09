@@ -396,3 +396,20 @@ input::placeholder {
   align-items: center;
   gap: 5px;
 }
+
+@media (max-width: 320px) {
+  body {
+    width: 100%;
+  }
+  .checkout{
+    width: 100%;
+    margin-top: 90px;
+  }
+  .containers{
+    width: 100%;
+  }
+  .billing-details{
+    width: 100%;
+  }
+
+}

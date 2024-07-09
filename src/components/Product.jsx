@@ -13,7 +13,7 @@ export const Product = ({onClick}) => {
         </span>
       </div>
 
-      <div className="product-slide" onClick={onClick}>
+      <div className="product-slide" onClick={onClick} >
         <div className="product-card">
           <div className="test">
             <img src="image/fav2.svg" alt="" className="fav" />

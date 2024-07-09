@@ -6,7 +6,7 @@ export const Checkout = ({onClick}) => {
     <div className="checkout">
       <div className="conatainers">
         <div className="summary">
-          <button>
+          <button onClick={onClick}>
             <img src="image/Arr.svg" alt="" />
           </button>
           <p>ORDER SUMMARY</p>
@@ -59,7 +59,7 @@ export const Checkout = ({onClick}) => {
               <p>Total</p>
               <p>$0.00</p>
             </div>
-            <button onClick={onClick}>Place Your Order Now</button>
+            <button >Place Your Order Now</button>
           </div>
         </div>
       </div>

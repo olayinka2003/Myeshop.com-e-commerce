@@ -81,6 +81,26 @@ header {
   align-items: center;
   gap: 10px;
   cursor: pointer;
+  position: relative;
+}
+
+.product-count {
+  width: Fixed (18px) px;
+  height: Fixed (18px) px;
+  top: 1.25px;
+  left: 18.49px;
+  padding: 0px 4px 0px 4px;
+  gap: 10px;
+  opacity: 0px;
+  background: rgba(13, 92, 99, 1);
+  border-radius: 10px;
+  font-family: Inter;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-size: 10px;
+  font-weight: 400;
 }
 .basket-icon img {
   width: 30%;
@@ -498,6 +518,7 @@ h1 {
   font-weight: 300;
   line-height: 12.1px;
   text-align: left;
+  color: black;
 }
 .boundary {
   width: 100%;
@@ -562,6 +583,8 @@ form input::placeholder {
   display: flex;
   align-items: center;
   gap: 50px;
+  width: 80%;
+  margin: auto;
   margin-top: 80px;
 }
 #services {
@@ -687,7 +710,6 @@ li {
   /* width: 30%; */
   background: rgba(255, 243, 230, 1);
   padding: 20px;
-  
 }
 
 @media (max-width: 768px) {

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, } from "react";
 import "./App.css";
 import { BestSelling } from "./components/BestSelling";
 import { Boundries } from "./components/Boundries";
@@ -14,22 +14,42 @@ import { Footer } from "./Footer";
 
 function App() {
   const [product, setProduct] = useState(false);
-  
+    const [cartCount, setCartCount] = useState(0);
+    const [isCheckout, setIsCheckout] = useState(false);
 
-  const handleProductClick = () => {
+    const openCheckout = () => {
+    setIsCheckout(true);
+  };
+
+  const closeCheckout = () =>{
+    setIsCheckout(false);
+  }
+  const openCart = () => {
     setProduct(true);
   };
+
+  const handleProductClick = () => {
+    setCartCount(cartCount + 1);
+  };
+
   return (
     <div className="app">
-      <Header />
-      <LimitedOffer />
-      <Linited />
-      <FlashSale onClick={handleProductClick}  product={product}/>
-      <Product onClick={handleProductClick} />
-      <BestSelling />
-      <Boundries />
-      <Footer />
-      {product ? <Cart product={product} setproduct={setProduct} /> : ""}
+     {isCheckout ? (
+  <Checkout onClick={closeCheckout} />
+) : (
+  <>
+    <Header onClick={openCart} cartcount={cartCount} />
+    <LimitedOffer />
+    <Linited />
+    <FlashSale onClick={handleProductClick} product={product} />
+    <Product onClick={handleProductClick} />
+    <BestSelling />
+    <Boundries />
+    <Footer />
+    {product && <Cart product={product} setproduct={setProduct} onClick={openCheckout} />}
+  </>
+)}
+
     </div>
   );
 }
