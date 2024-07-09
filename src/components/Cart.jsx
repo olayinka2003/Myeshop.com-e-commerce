@@ -31,46 +31,8 @@ export const Cart = ({product, setproduct, onClick}) => {
                         </div>
                     </div>
 
-                    <div className="payment-description">
-                        <div className="coupon">
-                            <input type="text" placeholder="coupon" />
-                            <button>APPLY</button>
-                        </div>
-                        <div className="total">
-                            <div className="subtotal">
-                                <p>Subtotal</p>
-                                <p>$0.00</p>
-                            </div>
-                            <div className="tax">
-                                <p>Tax</p>
-                                <p>$0.00</p>
-                            </div>
-                        </div>
-                        <div className="shipping">
-                            <p>Shipping</p>
-                            <div className="free">
-                                <span className="set">
-                                    <input type="radio" name="shipping" id="free" />
-                                    <label htmlFor="free">Free Shipping</label>
-                                </span>
-                                <p>$0.00</p>
-                            </div>
-                            <div className="flat">
-                                <span className="set">
-                                    <input type="radio" name="shipping" id="flat" />
-                                    <label htmlFor="flat">Flat Rate</label>
-                                </span>
-                                <p>$20.00</p>
-                            </div>
-                        </div>
-                        <hr />
-                        <div className="total-amount">
-                            <div className="amount">
-                                <p>Total</p>
-                                <p>$0.00</p>
-                            </div>
-                            <button onClick={onClick}>Place Your Order Now</button>
-                        </div>
+                    <div className="payer">
+                        <button onClick={onClick}>Checkout</button>
                     </div>
                 </div>
             ) : null}
