@@ -712,7 +712,7 @@ li {
   background: rgba(255, 243, 230, 1);
   padding: 20px;
 }
-.payer{
+.payer {
   margin-top: 60px;
   display: flex;
   justify-content: flex-end;
@@ -721,6 +721,7 @@ li {
 @media (max-width: 768px) {
   body {
     max-width: 100%;
+    padding: 5px;
   }
   header {
     width: 100%;
@@ -768,6 +769,7 @@ li {
     align-items: center;
     justify-content: flex-start;
   }
+
   .top-right {
     display: none;
   }
@@ -893,10 +895,21 @@ li {
     width: 100%;
     gap: 40px;
   }
+  .carti {
+    width: 40%;
+    position: absolute;
+    height: 250dvh;
+    top: 0px;
+    right: 0;
+    /* width: 30%; */
+    background: rgba(255, 243, 230, 1);
+    padding: 20px;
+  }
 }
 @media (max-width: 510px) {
   body {
     max-width: 100%;
+    padding: 5px;
   }
   .product-slide {
     width: 100%;
@@ -914,11 +927,22 @@ li {
     top: 10px;
     left: 150px;
   }
+  .carti {
+    width: 80%;
+    position: absolute;
+    height: 250dvh;
+    top: 0px;
+    right: 0;
+    /* width: 30%; */
+    background: rgba(255, 243, 230, 1);
+    padding: 20px;
+  }
 }
 
 @media (max-width: 426px) {
   body {
     max-width: 100%;
+    padding: 5px;
   }
   .product-slide {
     width: 100%;
@@ -937,11 +961,22 @@ li {
     left: 120px;
     /* display: none; */
   }
+  .carti {
+    width: 80%;
+    position: absolute;
+    height: 250dvh;
+    top: 0px;
+    right: 0;
+    /* width: 30%; */
+    background: rgba(255, 243, 230, 1);
+    padding: 20px;
+  }
 }
 
 @media (max-width: 376px) {
   body {
     max-width: 100%;
+    padding: 5px;
   }
   .product-slide {
     width: 100%;
@@ -960,10 +995,21 @@ li {
     left: 100px;
     /* display: none; */
   }
+  .carti {
+    width: 80%;
+    position: absolute;
+    height: 250dvh;
+    top: 0px;
+    right: 0;
+    /* width: 30%; */
+    background: rgba(255, 243, 230, 1);
+    padding: 20px;
+  }
 }
 @media (max-width: 320px) {
   body {
     max-width: 100%;
+    padding: 5px;
   }
   header {
     width: 100%;
@@ -1137,5 +1183,16 @@ li {
     flex-direction: column;
     width: 100%;
     gap: 40px;
+  }
+
+  .carti {
+    width: 80%;
+    position: absolute;
+    height: 250dvh;
+    top: 0px;
+    right: 0;
+    /* width: 30%; */
+    background: rgba(255, 243, 230, 1);
+    padding: 20px;
   }
 }

@@ -21,6 +21,7 @@
   line-height: 24px;
   text-align: center;
   color: rgba(25, 35, 26, 1);
+  margin-bottom: 30px;
 }
 
 .containers {
@@ -234,6 +235,8 @@
   text-align: center;
 }
 
+
+
 .name {
   width: 100%;
   display: flex;
@@ -397,20 +400,59 @@ input::placeholder {
   gap: 5px;
 }
 
-@media (max-width: 320px) {
-  body {
-    width: 100%;
-  }
-  .checkout{
+@media (max-width: 768px) {
+  .checkout {
     width: 100%;
     margin-top: 90px;
     flex-direction: column-reverse;
-
   }
-  .containers{
+  .containers {
     width: 100%;
   }
-  .billing-details{
+  .name input{
+    width: 100%;
+  }
+  .namee{
+    width: 100%;
+  }
+  .billing-details {
+    width: 100%;
+  }
+  .summary {
+    background: #0d5c63;
+    width: 768px;
+    margin: auto;
+    height: 218px;
+    /* padding: 5rem; */
+  }
+  .payment {
+    width: 100%;
+  }
+  .coupon {
+    width: 80%;
+    margin: auto;
+  }
+  .options {
+    width: 100%;
+  }
+  .total,
+  .shipping,
+  .total-amount {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media(max-width:426px){
+  .checkout {
+    width: 100%;
+    margin-top: 90px;
+    flex-direction: column-reverse;
+  }
+  .containers {
+    width: 100%;
+  }
+  .billing-details {
     width: 100%;
   }
   .summary {
@@ -420,20 +462,74 @@ input::placeholder {
     height: 218px;
     /* padding: 5rem; */
   }
-  .payment{
+  .payment {
     width: 100%;
   }
-  .coupon{
+  .coupon {
     width: 60%;
     margin: auto;
   }
-.options{
-  width: 100%;
-}
-.total,.shipping,.total-amount{
-  width: 60%;
-  margin: auto;
+  .options {
+    width: 100%;
+  }
+  .total,
+  .shipping,
+  .total-amount {
+    width: 60%;
+    margin: auto;
+  }
+  .namee {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
 }
 
-
+@media (max-width: 320px) {
+  body {
+    width: 100%;
+  }
+  .checkout {
+    width: 100%;
+    margin-top: 90px;
+    flex-direction: column-reverse;
+  }
+  .containers {
+    width: 100%;
+  }
+  .billing-details {
+    width: 100%;
+  }
+  .summary {
+    background: #0d5c63;
+    width: 440px;
+    margin: auto;
+    height: 218px;
+    /* padding: 5rem; */
+  }
+  .payment {
+    width: 100%;
+  }
+  .coupon {
+    width: 60%;
+    margin: auto;
+  }
+  .options {
+    width: 100%;
+  }
+  .total,
+  .shipping,
+  .total-amount {
+    width: 60%;
+    margin: auto;
+  }
+  .namee{
+    width: 100%;
+  }
+  .name input{
+    width: 100%;
+  }
 }
+
