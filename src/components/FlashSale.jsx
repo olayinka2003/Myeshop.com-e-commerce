@@ -1,7 +1,7 @@
 import React from "react";
 
 import { useState, useEffect } from "react";
-export const FlashSale = ({onClick}) => {
+export const FlashSale = () => {
   const getCurrentTime = () => {
     const now = new Date();
     const hours = now.getHours();
@@ -51,7 +51,7 @@ export const FlashSale = ({onClick}) => {
             <button className="right-btn">&rarr;</button>
           </div>
         </div>
-        <div className="flash-slide" onClick={onClick}>
+        <div className="flash-slide">
           <div className="flash-card">
             <img src="image/favorite.svg" alt="" className="fav-icon" />
             <img src="image/woman-sitting.svg" alt="" />

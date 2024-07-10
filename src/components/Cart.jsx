@@ -16,9 +16,9 @@ export const Cart = ({product, setproduct, onClick}) => {
                     <h1>Shopping Cart</h1>
 
                     <div className="item">
-                        <span className="inc">
+                        {/* <span className="inc">
                             <button>+</button>1<button>-</button>
-                        </span>
+                        </span> */}
 
                         <div className="stuff">
                             <img src="image/sneaker.svg" alt="" className="shoe" />{" "}

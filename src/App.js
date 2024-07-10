@@ -12,6 +12,8 @@ import { Linited } from "./components/Linited";
 import { Product } from "./components/Product";
 import { Footer } from "./Footer";
 
+
+
 function App() {
   const [product, setProduct] = useState(false);
     const [cartCount, setCartCount] = useState(0);
